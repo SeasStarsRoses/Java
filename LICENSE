@@ -61,6 +61,7 @@ The Internationalisation files contain the following Licence from Oracle:
 ---------------------------------------------------------------------------------------------
 
 3. CHESS FIGURE IMAGES
+
 This code is using chess figure images.
 The original chess figure images are from Wikimedia Commons, the free media repository.	
 The original images were converted from *.png to *.gif by the author of this software.
@@ -107,7 +108,7 @@ For the original licence information please see the following links.
 4. GNU GENERAL PUBLIC LICENSE 
 
 The author of this software likes Free Software.
-As far as it is possible and not restricted by the licence information mentioned above, 
+As far as it is legal and not restricted by the licence information mentioned above, 
 the author would like to set all his own lines of code in this software under the following Licence:
 
                     GNU GENERAL PUBLIC LICENSE
