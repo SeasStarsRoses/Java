@@ -263,10 +263,10 @@ public class View {
 								color = BLUE;
 							} else if (firstSelection != null && firstSelection.equals(coordinate)) {
 								color = YELLOW;
+							} else if (firstSelection != null && toCoordinates != null && toCoordinates.contains(coordinate)) {
+								 color = GREEN;
 							} else	if (toCoordinates.contains(coordinate)) {
 								 color = RED;
-							} else if (toCoordinates != null && toCoordinates.contains(coordinate)) {
-							 color = GREEN;
    						    } 														
 							else if (whiteField) {
 								// Paint background for white fields
