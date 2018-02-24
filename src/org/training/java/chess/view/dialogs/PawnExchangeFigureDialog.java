@@ -14,8 +14,8 @@ import org.training.java.chess.controller.Controller;
 import org.training.java.chess.model.coordinate.BoardCoordinate;
 import org.training.java.chess.model.coordinate.InvalidCoordinateException;
 import org.training.java.chess.model.figures.Figure;
-import org.training.java.chess.model.player.chess.view.ImageFactory;
-import org.training.java.chess.model.player.chess.view.View;
+import org.training.java.chess.view.ImageFactory;
+import org.training.java.chess.view.View;
 
 /**
  * Figure Dialog displays Pawn Exchange Figures so that human player can choose
@@ -103,13 +103,14 @@ public class PawnExchangeFigureDialog {
 			figures[i].addMouseListener(mouseAdapter2);
 		}
 
-		Image image = ImageFactory.createImage(org.training.java.chess.model.figures.Queen.class, true, display, view.BROWN_LIGHT, boardWidth);
+		ImageFactory factory = view.getImageFactory();
+		Image image = factory.createImage(org.training.java.chess.model.figures.Queen.class, true, display, boardWidth);
 		figures[0].setBackgroundImage(image);
-		image = ImageFactory.createImage(org.training.java.chess.model.figures.Rook.class, true, display, view.BROWN_LIGHT, boardWidth);
+		image = factory.createImage(org.training.java.chess.model.figures.Rook.class, true, display, boardWidth);
 		figures[1].setBackgroundImage(image);
-		image = ImageFactory.createImage(org.training.java.chess.model.figures.Bishop.class, true, display, view.BROWN_LIGHT, boardWidth);
+		image = factory.createImage(org.training.java.chess.model.figures.Bishop.class, true, display, boardWidth);
 		figures[2].setBackgroundImage(image);
-		image = ImageFactory.createImage(org.training.java.chess.model.figures.Knight.class, true, display, view.BROWN_LIGHT, boardWidth);
+		image = factory.createImage(org.training.java.chess.model.figures.Knight.class, true, display, boardWidth);
 		figures[3].setBackgroundImage(image);
 		
 		dialog.addMouseListener(mouseAdapter2);

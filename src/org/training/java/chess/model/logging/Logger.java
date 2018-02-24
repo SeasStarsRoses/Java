@@ -39,8 +39,7 @@ public class Logger {
 		SimpleDateFormat hours = new SimpleDateFormat("hh");
 		SimpleDateFormat minutes = new SimpleDateFormat("mm");
 		SimpleDateFormat seconds = new SimpleDateFormat("ss");
-		StringBuffer buffer = new StringBuffer("C:" + File.separator + "temp" + 
-				File.separator + "chess "); 
+		StringBuffer buffer = new StringBuffer("chess "); 
 
 		Date date = new Date();
 		buffer.append(dates.format(date));

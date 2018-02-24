@@ -4,7 +4,7 @@ import org.training.java.chess.chess.view.internationalization.Languages;
 import org.training.java.chess.game.Board;
 import org.training.java.chess.model.coordinate.InvalidCoordinateException;
 import org.training.java.chess.model.logging.Logger;
-import org.training.java.chess.model.player.chess.view.View;
+import org.training.java.chess.view.View;
 import org.training.java.chess.view.dialogs.WelcomeDialog;
 
 

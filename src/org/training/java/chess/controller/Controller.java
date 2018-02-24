@@ -21,7 +21,7 @@ import org.training.java.chess.model.logging.Logger;
 import org.training.java.chess.model.player.ComputerPlayer;
 import org.training.java.chess.model.player.HumanPlayer;
 import org.training.java.chess.model.player.Player;
-import org.training.java.chess.model.player.chess.view.View;
+import org.training.java.chess.view.View;
 import org.training.java.chess.view.dialogs.PawnExchangeFigureDialog;
 import org.training.java.chess.view.dialogs.WelcomeDialog;
 

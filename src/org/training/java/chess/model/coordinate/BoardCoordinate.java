@@ -301,4 +301,27 @@ public class BoardCoordinate extends Coordinate implements Cloneable {
 	public BoardCoordinate clone() {
 		return (BoardCoordinate) super.clone();
 	}
+	
+	/**
+	 * Checks if a row or column is on the board
+	 * @param columnOrRow column or row
+	 * @return true when between 0 and 7, false otherwise
+	 */
+	public static boolean valid(int columnOrRow) {
+		if (0 <= columnOrRow && columnOrRow <= 7) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	/**
+	 * Checks if a row and column are on the board
+	 * @param column on chess board 
+	 * @param row on chess board
+	 * @return true when both between 0 and 7, false otherwise
+	 */
+	public static boolean valid(int column, int row) {
+		return valid(column) & valid (row);
+	}	
 }
